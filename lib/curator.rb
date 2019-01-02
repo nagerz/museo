@@ -41,7 +41,6 @@ class Curator
   end
 
   def load_photographs(file)
-    #Out of time. Can't find the actual CSV files. So this is a guess.
     photo_substrings = IO.readlines(file)
     photo_substrings.each do |n|
       info_substrings = n.split(",")
@@ -54,7 +53,6 @@ class Curator
   end
 
   def load_artists(file)
-    #Out of time. Can't find the actual CSV files. So this is a guess.
     artist_substrings = IO.readlines(file)
     artist_substrings.each do |n|
       info_substrings = n.split(",")
